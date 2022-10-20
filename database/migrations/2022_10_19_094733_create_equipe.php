@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('equipe', function (Blueprint $table) {
+        Schema::create('equipes', function (Blueprint $table) {
             Schema::disableForeignKeyConstraints();
             $table->id();
             $table->string('pays')->unique();

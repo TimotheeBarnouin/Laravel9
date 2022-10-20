@@ -20,7 +20,7 @@ class EquipeSeeder extends Seeder
         $i = -1;
         $json = File::get("database/data/equipes.json");
         $jsonFile = json_decode($json, false, 512, JSON_THROW_ON_ERROR);
-        $groupeID = DB::table('groupe')->pluck('id');
+        $groupeID = DB::table('groupes')->pluck('id');
         foreach ($jsonFile as $obj) {
             foreach ($obj as $groupe) {
                 $i++;
